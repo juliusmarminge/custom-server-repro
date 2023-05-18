@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "build:1-next": "NODE_ENV=production next build",
-    "build:2-server": "tsc --project tsconfig.server.json",
+    "build:2-server": "tsc",
     "build": "run-s build:*",
-    "dev:wss": "PORT=3001 tsx watch src/server/wssDevServer.ts --tsconfig tsconfig.server.json ",
+    "dev:wss": "PORT=3001 tsx watch src/server/wssDevServer.ts",
     "dev:next": "next dev",
     "dev": "run-p dev:*",
     "start": "NODE_ENV=production node ./dist/server/prodServer.js",
